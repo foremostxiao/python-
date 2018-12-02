@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{ background-color: #cdcdcd;}
+.header{
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+#form{
+    width: 600px;
+    height: 50px;
+    margin: 0 auto;
+
+}
+
+label{
+    float: left;
+    width: 100px;
+    line-height: 30px;
+    color: #DDD;
+    font-size: 24px;
+    cursor: pointer;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+#title{
+    width: 50%;
+    line-height: 25px;
+    text-align: left;
+    float: right;
+    margin-top: 2px;
+    border-radius: 5px;
+}
+/*第二部分*/
+li{
+    list-style: none;
+}
+h2{
+    float: top;
+    padding-top: 30px;
+}
+ol{
+   float: bottom;
+}
+#todocount,#donecount{
+    float: right;
+}
+.content{
+    width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/*js部分*/
+.content ol li .title{
+    top: 3px;
+    left: 40px;
+    width: 70%;
+    height: 20px;
+    line-height: 14px;
+    text-indent: 5px;
+    font-size: 14px;
+
+}
+
+.content ol li input[type='checkbox']{
+    float: left;
+    width: 22px;
+    height: 25px;
+    background-color: silver;
+}
+.content ol li{
+    padding-top: 10px;
+    overflow: hidden;
+
+}
+.content ol a{
+    text-decoration:none
+}
+
+/*最后*/
+.footer{ width: 600px; margin: 0 auto; color: #666; font-size: 14px; text-align: center; margin-top: 20px;}
+.footer a{ text-decoration: none;
+    font-weight: bold;color: black}

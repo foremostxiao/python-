@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDoList</title>
+    <!--((设置屏幕宽度为设备宽度，禁止用户手动调整缩放))-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!--告诉IE浏览器以最高级模式渲染当前网页-->
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="keywords" content="todolist">
+    <link rel="icon" href=imgs/todolist.png>
+    <!--外链接css、js-->
+    <link type="text/css" rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <!--第一部分-->
+    <div class="header">
+        //必需的 action 属性规定当提交表单时，向何处发送表单数据。
+        <form action="javascript:postAction()" id="form">
+            <label for="title">ToDoList</label>
+            <input type="text" id="title" placeholder="添加ToDoList" required="required" autocomplete="off" >
+
+        </form>
+    </div>
+    <!--第二部分-->
+    <div class="content">
+      	<h2 onclick="save()">正在进行 <span id="todocount"></span></h2>
+        <ol id="todolist"></ol>
+        <!---->
+       <h2>已经完成 <span id="donecount"></span></h2>
+        <ol id="donelist"></ol>
+    </div>
+    <!--第三部分-->
+    <div class="footer">
+        <ul>
+            <li>
+               Copyright © 2018 todolist.cn   <a href="javascript:clear();">clear</a>
+            </li>
+        </ul>
+    </div>
+    <!--外链接css、js-->
+    <script type="text/javascript" src="index.js" ></script>
+</body>
+</html>
